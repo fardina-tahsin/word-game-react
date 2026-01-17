@@ -7,32 +7,32 @@ A fun and interactive Word Guess Game built with React, featuring an animated te
 
 ## Features
 
-     Random word selection
+    - Random word selection
     
-     On-screen letter buttons (A–Z)
+    - On-screen letter buttons (A–Z)
     
-     Wrong guess tracking
+    - Wrong guess tracking
     
-     Animated teddy reacts to wrong guesses
+    - Animated teddy reacts to wrong guesses
     
-     Win / Lose detection
+    - Win / Lose detection
     
-     Restart game anytime
+    - Restart game anytime
     
-     Responsive design 
+    - Responsive design 
     
-     Clean and modern UI
+    - Clean and modern UI
 
 
 ## Tech Stack
 
-    React (Functional Components)
+    - React (Functional Components)
     
-    Custom React Hooks
+    - Custom React Hooks
     
-    CSS (Flexbox & Animations)
+    - CSS (Flexbox & Animations)
     
-    JavaScript (ES6+)
+    - JavaScript (ES6+)
 
 
 
