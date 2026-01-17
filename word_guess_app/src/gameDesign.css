@@ -1,0 +1,140 @@
+/* Container */
+.word-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background: #fff8f5;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(214, 31, 42, 0.2);
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Word display */
+.word-display {
+  margin: 20px 0;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.letter {
+  margin: 0 6px;
+  font-size: 26px;
+  display: inline-block;
+  border-bottom: 2px solid #d61f2a;
+  padding-bottom: 6px;
+}
+
+.letter.guessed {
+  color: #d61f2a;
+  border-bottom: 2px solid #b12b38;
+}
+
+/* Letter buttons */
+.letterButtons {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.letterButtons button {
+  font-size: 18px;
+  padding: 12px 18px;
+  background-color: #d61f2a;
+  color: #fff8f5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(214, 31, 42, 0.3);
+  transition: all 0.3s ease;
+}
+
+.letterButtons button:hover {
+  background-color: #b12b38;
+}
+
+.letterButtons button:disabled {
+  background-color: #f0dcdc;
+  color: #bd5757;
+  cursor: not-allowed;
+}
+
+/* Result messages */
+.result-message {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 25px 0;
+  color: #b12b38;
+}
+
+/* New game button */
+.new-game-button {
+  font-size: 18px;
+  padding: 12px 20px;
+  background-color: #d61f2a;
+  color: #fff8f5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(214, 31, 42, 0.3);
+  transition: all 0.3s ease;
+}
+
+.new-game-button:hover {
+  background-color: #b12b38;
+}
+
+/* Wrapper holding word box and teddy */
+.game-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  margin-top: 35px;
+  position: relative;
+}
+
+/* Teddy container */
+.teddy-container {
+  flex: 0 0 auto;
+  display: flex;
+  margin-right: 250px;
+  margin-left: -330px;
+  align-items: flex-start;
+}
+
+.teddy {
+  width: 200px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  border: 2px solid #d61f2a;
+}
+
+.teddy.animated {
+  animation: wobble 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes wobble {
+  0% { transform: rotate(0deg) translateY(0px); }
+  50% { transform: rotate(5deg) translateY(-5px); }
+  100% { transform: rotate(-5deg) translateY(0px); }
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .game-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teddy-container {
+    margin-top:30px;
+  }
+}
+
+
+
